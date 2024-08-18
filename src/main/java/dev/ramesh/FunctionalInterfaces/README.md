@@ -77,3 +77,16 @@ The `BiConsumer` interface is a part of the `java.util.function` package and is 
 
 ```java
 void accept(T t, U u);
+```
+
+## BiFunction
+
+The `BiFunction` interface is part of the `java.util.function` package in Java and represents a function that takes two input arguments and produces a result. It is a functional interface intended to be used with lambda expressions or method references.
+
+## What is BiFunction?
+
+`BiFunction` is a functional interface that takes two input arguments and returns a result. It is defined with the following method:
+
+```java
+R apply(T t, U u);
+```
