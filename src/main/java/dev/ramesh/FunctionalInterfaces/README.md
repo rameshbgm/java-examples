@@ -73,6 +73,8 @@ Functional interfaces are widely used in various contexts:
 
 The `BiConsumer` interface is a part of the `java.util.function` package and is a functional interface in Java. It is intended for use primarily with lambda expressions or method references.
 
+## What is BiConsumer?
+
 `BiConsumer` is a functional interface that accepts two input parameters and performs an operation on them without returning any result. The interface has a single method:
 
 ```java
@@ -90,3 +92,16 @@ The `BiFunction` interface is part of the `java.util.function` package in Java a
 ```java
 R apply(T t, U u);
 ```
+
+## BinaryOperator
+
+The `BinaryOperator` interface is part of the `java.util.function` package in Java. It is a specialized form of the `BiFunction` interface that represents an operation taking two input arguments of the same type and producing a result of the same type. It is intended to be used with lambda expressions or method references.
+
+## What is BinaryOperator?
+
+`BinaryOperator` is a functional interface that extends `BiFunction` and operates on two arguments of the same type, producing a result of the same type. It is defined with the following method:
+
+```java
+R apply(T t1, T t2);
+```
+
