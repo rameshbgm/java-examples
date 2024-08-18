@@ -73,8 +73,6 @@ Functional interfaces are widely used in various contexts:
 
 The `BiConsumer` interface is a part of the `java.util.function` package and is a functional interface in Java. It is intended for use primarily with lambda expressions or method references.
 
-## What is BiConsumer?
-
 `BiConsumer` is a functional interface that accepts two input parameters and performs an operation on them without returning any result. The interface has a single method:
 
 ```java
@@ -84,8 +82,6 @@ void accept(T t, U u);
 ## BiFunction
 
 The `BiFunction` interface is part of the `java.util.function` package in Java and represents a function that takes two input arguments and produces a result. It is a functional interface intended to be used with lambda expressions or method references.
-
-## What is BiFunction?
 
 `BiFunction` is a functional interface that takes two input arguments and returns a result. It is defined with the following method:
 
@@ -97,11 +93,18 @@ R apply(T t, U u);
 
 The `BinaryOperator` interface is part of the `java.util.function` package in Java. It is a specialized form of the `BiFunction` interface that represents an operation taking two input arguments of the same type and producing a result of the same type. It is intended to be used with lambda expressions or method references.
 
-## What is BinaryOperator?
-
 `BinaryOperator` is a functional interface that extends `BiFunction` and operates on two arguments of the same type, producing a result of the same type. It is defined with the following method:
 
 ```java
 R apply(T t1, T t2);
 ```
 
+# BiPredicate
+
+The `BiPredicate` interface is a part of the `java.util.function` package in Java. It represents a predicate, which is a boolean-valued function of two arguments. It is designed to be used with lambda expressions or method references and allows you to evaluate a condition on two input values.
+
+`BiPredicate` is a functional interface that takes two input arguments and returns a boolean result. It is defined with the following method:
+
+```java
+boolean test(T t, U u);
+```
