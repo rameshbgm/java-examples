@@ -25,7 +25,7 @@ public class BiFunctionExample {
 
     public static void main(String[] args) {
         // Define a BiFunction that calculates the sum of two integers
-        BiFunction<Integer, Integer, Integer> sumFunction = (a, b) -> a + b;
+        BiFunction<Integer, Integer, Integer> sumFunction = Integer::sum;
 
         // Use the BiFunction to calculate and print the sum and product of two integers
         System.out.println("Sum: " + sumFunction.apply(5, 3));
