@@ -1,4 +1,3 @@
-"# java-examples"
 # Reentrant Lock Example in Java 21
 
 This example demonstrates the use of `ReentrantLock` in Java for thread synchronization. The example provided shows how to use a `ReentrantLock` to safely increment a shared counter from multiple threads.
